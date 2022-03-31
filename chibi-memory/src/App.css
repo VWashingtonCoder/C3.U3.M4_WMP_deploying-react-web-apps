@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  max-width: 800px;
+  background-color: #CF9FFF;
+  padding: 1px 0 2.5rem; 
+  font-family: 'Caveat', cursive;
+}
+h1{
+  font-size: 60px;
+  padding: 5px;
+  margin: 3px 0 15px;
+}
+div.turnBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.turns{
+  font-size: 30px;
+}
+div.message{
+  font-size:25px;
+}
+button{
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: 'Caveat', cursive;
+}
+button:hover{
+  background-color: #c23866;
+  color: #fff;
+}
+.card-grid{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 80%;
+  justify-items: end;
+  margin-left: 6rem;
+}
+
+/*Single-Card styles*/
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+/*Front of card - pictures */
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.flipped .front{
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+/* back of card - cover */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
